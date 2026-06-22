@@ -107,7 +107,6 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <meta name="google-site-verification" content="efXmhR4DvYdxZOqMO0X1DFiZKxVju8HFKUSbt-NOHlw" />
     </header>
   );
 };
