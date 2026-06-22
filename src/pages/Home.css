@@ -1,0 +1,419 @@
+/* Home Page Specific Styles */
+.home-page {
+  width: 100%;
+}
+
+/* SECTION 1: Hero & Quick Actions */
+.hero-section {
+  position: relative;
+  padding-top: var(--spacing-lg);
+  z-index: 10;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 21/9;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    aspect-ratio: 16/9;
+  }
+}
+
+.carousel-slide {
+  border-radius: var(--radius-xl);
+}
+
+.quick-actions-floating {
+  position: relative;
+  margin-top: -3rem; /* Pull up to overlap the carousel */
+  z-index: 20;
+}
+
+.quick-actions-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm);
+  border: 1px solid rgba(0,0,0,0.05);
+  flex-wrap: wrap;
+}
+
+.qa-item {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg) var(--spacing-sm);
+  color: var(--color-primary-dark);
+  font-weight: 500;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  transition: var(--transition-smooth);
+}
+
+.qa-item:hover {
+  background-color: var(--color-bg-alt);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.qa-icon {
+  color: var(--color-accent);
+  transition: transform 0.3s ease;
+}
+
+.qa-item:hover .qa-icon {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .quick-actions-floating {
+    margin-top: -1rem;
+  }
+  .qa-item {
+    min-width: 33%;
+    padding: var(--spacing-md) var(--spacing-xs);
+    font-size: 0.85rem;
+  }
+}
+
+/* SECTION 2: Explore Our Products */
+.explore-products-section {
+  padding-top: var(--spacing-3xl);
+  padding-bottom: var(--spacing-3xl);
+}
+
+.section-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.product-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.product-category-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: inherit;
+}
+
+.product-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-primary-light);
+}
+
+.product-category-card .icon-wrapper {
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+  transition: var(--transition-smooth);
+}
+
+.product-category-card:hover .icon-wrapper {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.product-category-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-category-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.explore-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.product-category-card:hover .explore-link {
+  color: var(--color-accent);
+}
+
+/* SECTION 3: Interest Rates Highlight Strip */
+.rates-highlight-strip {
+  background: var(--gradient-primary);
+  color: var(--color-text-inverse);
+  padding: var(--spacing-2xl) 0;
+}
+
+.rates-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+}
+
+.rates-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.rates-text h3 {
+  color: var(--color-text-inverse);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rates-text p {
+  opacity: 0.85;
+}
+
+.rates-badge {
+  display: flex;
+  align-items: baseline;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.rates-badge .up-to {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  opacity: 0.8;
+}
+
+.rates-badge .rate-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.rates-badge .rate-suffix {
+  font-size: 1.25rem;
+  margin-left: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .rates-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* SECTION 4: Tools & Calculators */
+.calculator-section {
+  padding-bottom: var(--spacing-3xl);
+}
+
+.calculator-wrapper {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+/* SECTION 5: Complaints Hub */
+.complaints-section {
+  padding-bottom: var(--spacing-3xl);
+}
+
+.complaints-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.complaint-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.complaint-level-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: 0.25rem 1rem;
+  border-bottom-left-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.complaint-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding-right: 4rem;
+}
+
+.complaint-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.complaint-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.special-support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.support-box {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.support-icon-area {
+  flex-shrink: 0;
+}
+
+.support-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.support-content ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.support-content li {
+  margin-bottom: 0.25rem;
+}
+
+/* SECTION 6: Notice Board & Updates */
+.notice-board-section {
+  padding-bottom: var(--spacing-3xl);
+}
+
+.notice-board-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (max-width: 992px) {
+  .notice-board-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.notice-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.notice-header {
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notice-header h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.view-all {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.notice-list {
+  list-style: none;
+}
+
+.notice-list > li {
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.notice-list > li:last-child {
+  border-bottom: none;
+}
+
+.notice-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.notice-list p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.light-text a {
+  color: white;
+  display: block;
+}
+
+.light-text a:hover strong {
+  color: var(--color-accent);
+}
+
+.light-text strong {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+  display: block;
+  transition: color 0.2s;
+}
+
+.light-text p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+}

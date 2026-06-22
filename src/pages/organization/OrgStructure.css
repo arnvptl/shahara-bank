@@ -1,0 +1,228 @@
+.org-structure-page {
+  background-color: var(--color-bg-alt); /* slightly darker background similar to the image */
+  min-height: 100vh;
+  padding-bottom: var(--spacing-3xl);
+  position: relative;
+}
+
+.org-tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: var(--spacing-xl);
+  overflow-x: auto;
+  padding: var(--spacing-xl) 0;
+}
+
+.org-node {
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+  min-width: 220px;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #e0eaf5 100%);
+}
+
+.org-node:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+}
+
+.org-node-primary {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #e0eaf5 100%);
+  font-size: 1.1rem;
+}
+
+/* Lines */
+.line-vertical {
+  width: 2px;
+  background-color: var(--color-accent);
+  z-index: 1;
+}
+
+.line-horizontal {
+  height: 2px;
+  background-color: var(--color-accent);
+  z-index: 1;
+}
+
+/* Specific structure layouts */
+.top-level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid-level-branches {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 600px;
+}
+
+.branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+/* Committees Layout */
+.committees-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 0;
+}
+
+.committee-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px; /* fixed width to ensure alignment */
+  position: relative;
+}
+
+.committee-left, .committee-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.committee-left {
+  justify-content: flex-end;
+}
+
+.committee-right {
+  justify-content: flex-start;
+}
+
+.center-spine {
+  width: 2px;
+  height: 60px; /* distance between rows */
+  background-color: var(--color-accent);
+  margin: 0;
+}
+
+/* Custom Tooltip */
+.org-tooltip {
+  position: fixed; /* Fixed prevents container scrollbars */
+  background-color: #233148;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  min-width: 350px;
+  max-width: 400px;
+  pointer-events: none; /* so it doesn't interfere with hovering off */
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  transform: translateY(10px);
+}
+
+.org-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tooltip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tooltip-list li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.tooltip-list li:last-child {
+  margin-bottom: 0;
+}
+
+.bullet-icon {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.tooltip-name {
+  flex: 1;
+}
+
+.tooltip-role {
+  font-weight: 600;
+  color: #aebfd1;
+}
+
+@media (max-width: 900px) {
+  .org-tree-container {
+    padding: var(--spacing-md) 0;
+  }
+  .org-level-2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .horizontal-connector {
+    display: none !important;
+  }
+  .org-branch {
+    width: 100% !important;
+  }
+  .committees-container {
+    width: 100% !important;
+  }
+  .committee-row {
+    flex-direction: column !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .committee-node-container {
+    width: 100%;
+    justify-content: center !important;
+    padding: 0.5rem 0 !important;
+  }
+  .committee-spine {
+    width: 2px !important;
+    height: 30px !important; /* turns into just a vertical line between the two nodes */
+  }
+  .committee-spine .line-horizontal {
+    display: none !important;
+  }
+  .org-node {
+    width: 90%;
+    max-width: 350px;
+  }
+  .org-tooltip {
+    /* For mobile, position it fixed at bottom */
+    top: auto !important;
+    bottom: 20px !important;
+    left: 5% !important;
+    width: 90% !important;
+    min-width: 0;
+    max-width: 100%;
+    transform: translateY(20px);
+  }
+  .org-tooltip.visible {
+    transform: translateY(0);
+  }
+}
