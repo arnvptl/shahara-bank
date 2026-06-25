@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { ShieldCheck, CalendarClock, Percent } from 'lucide-react';
 
 const VehicleLoans = () => {
@@ -13,7 +14,7 @@ const VehicleLoans = () => {
       <div className="container">
         <div className="section-header">
           <h2>Vehicle Loans</h2>
-          <p className="text-muted">Finance your dream vehicle with our easy and quick loan options.</p>
+          <p className="text-muted">Financing for two-wheelers, four-wheelers (personal use), and commercial vehicles including heavy vehicles and tankers.</p>
         </div>
 
         <div className="card" style={{ marginBottom: 'var(--spacing-2xl)' }}>
@@ -82,6 +83,29 @@ const VehicleLoans = () => {
             </tbody>
           </table>
         </div>
+
+
+        {/* Eligibility Criteria */}
+        <div className="card" style={{ marginBottom: 'var(--spacing-2xl)' }}>
+          <h3 style={{ color: 'var(--color-primary)', marginBottom: 'var(--spacing-md)' }}>Eligibility Criteria</h3>
+          <ul style={{ paddingLeft: '1.5rem', color: 'var(--color-text-muted)', lineHeight: '1.9' }}>
+            <li>Salaried employees, self-employed individuals, traders, and transporters</li>
+            <li>Valid driving licence required for personal-use vehicle loans</li>
+            <li>For commercial vehicles: driving licence, experience certificate, and permits from relevant transport authority</li>
+            <li>Repayment capacity assessed on the basis of income and existing liabilities</li>
+            <li>Valid KYC documents as per RBI guidelines are mandatory</li>
+          </ul>
+        </div>
+
+        {/* Apply CTA */}
+        <div style={{ background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', padding: 'var(--spacing-xl)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+          <div>
+            <h3 style={{ marginBottom: '0.25rem' }}>Apply for a Vehicle Loan</h3>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Visit your nearest branch or contact us to begin your application.</p>
+          </div>
+          <Link to="/contact" className="btn btn-primary">Enquire Now</Link>
+        </div>
+
       </div>
     </div>
   );

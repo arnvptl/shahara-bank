@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 const HomeLoans = () => {
   return (
@@ -12,7 +13,7 @@ const HomeLoans = () => {
       <div className="container">
         <div className="section-header">
           <h2>Home Loans</h2>
-          <p className="text-muted">Turn your dream of owning a home into a reality.</p>
+          <p className="text-muted">Finance the purchase or construction of residential property. Available to salaried and self-employed individuals.</p>
         </div>
 
         <div className="card" style={{ marginBottom: 'var(--spacing-2xl)' }}>
@@ -59,6 +60,28 @@ const HomeLoans = () => {
             </tbody>
           </table>
         </div>
+
+        {/* Eligibility Criteria */}
+        <div className="card" style={{ marginBottom: 'var(--spacing-2xl)' }}>
+          <h3 style={{ color: 'var(--color-primary)', marginBottom: 'var(--spacing-md)' }}>Eligibility Criteria</h3>
+          <ul style={{ paddingLeft: '1.5rem', color: 'var(--color-text-muted)', lineHeight: '1.9' }}>
+            <li>Salaried employees, self-employed individuals, and business persons</li>
+            <li>Age: Minimum 21 years at the time of application</li>
+            <li>Repayment capacity assessed on the basis of income and existing liabilities</li>
+            <li>The property must be within the bank's approved area of operation</li>
+            <li>Valid KYC documents as per RBI guidelines are mandatory</li>
+          </ul>
+        </div>
+
+        {/* Apply CTA */}
+        <div style={{ background: 'var(--color-bg-alt)', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', padding: 'var(--spacing-xl)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+          <div>
+            <h3 style={{ marginBottom: '0.25rem' }}>Apply for a Home Loan</h3>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Visit your nearest branch or contact us to begin your application.</p>
+          </div>
+          <Link to="/contact" className="btn btn-primary">Enquire Now</Link>
+        </div>
+
       </div>
     </div>
   );

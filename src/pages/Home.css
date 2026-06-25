@@ -1,4 +1,199 @@
 /* Home Page Specific Styles */
+
+/* ── MARQUEE TICKER ─────────────────────────── */
+.marquee-strip {
+  background-color: var(--color-primary-dark);
+  border-bottom: 2px solid var(--color-accent);
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  height: 36px;
+}
+
+.marquee-label {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.marquee-track-wrap {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marqueeScroll 60s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-item {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.82rem;
+  padding: 0 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marquee-dot {
+  color: var(--color-accent);
+  font-size: 0.6rem;
+}
+
+/* ── QUICK LINKS BAR ─────────────────────────── */
+.quick-links-bar-section {
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0;
+}
+
+.quick-links-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-left: 1px solid var(--color-border);
+}
+
+.ql-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.9rem 0.5rem;
+  color: var(--color-primary-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 3px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  text-decoration: none;
+}
+
+.ql-item:hover {
+  background-color: var(--color-bg-alt);
+  border-bottom-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.ql-icon {
+  color: var(--color-primary);
+  transition: color 0.15s ease;
+}
+
+.ql-item:hover .ql-icon {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .quick-links-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-links-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ql-item {
+    font-size: 0.75rem;
+    padding: 0.7rem 0.25rem;
+  }
+}
+
+/* ── INTEREST RATES TABLE ─────────────────────── */
+.rates-table-section {
+  padding-bottom: var(--spacing-3xl);
+}
+
+.rates-tables-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .rates-tables-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rates-sub-head {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  border-left: 4px solid var(--color-accent);
+  padding-left: 0.6rem;
+  margin-bottom: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.bank-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  border: 1px solid var(--color-border);
+}
+
+.bank-table thead tr {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.bank-table th {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.82rem;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.bank-table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.bank-table tbody tr:nth-child(even) {
+  background-color: var(--color-bg-alt);
+}
+
+.bank-table .highlight-row td {
+  background-color: #EFF6FF;
+  font-weight: 600;
+}
+
+.rates-cta-btn {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-sm) !important;
+  display: inline-flex;
+}
+
+
 .home-page {
   width: 100%;
 }

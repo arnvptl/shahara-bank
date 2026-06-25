@@ -6,14 +6,15 @@ const DepositsRates = () => {
   return (
     <div className="section page-fade-in">
       <Helmet>
-        <title>Interest Rates On Deposits | Ahmednagar Shahar Sahakari Bank</title>
-        <meta name="description" content="Check out the attractive interest rates on savings accounts and term deposits at Ahmednagar Shahar Sahakari Bank." />
+        <title>Deposit Interest Rates | Ahmednagar Shahar Sahakari Bank</title>
+        <meta name="description" content="Current savings account and fixed deposit interest rates at Ahmednagar Shahar Sahakari Bank. Rates effective from 06.08.2024. Additional rates for senior and super senior citizens." />
+        <link rel="canonical" href="https://new.shaharbank.com/services/deposit-rates" />
       </Helmet>
 
       <div className="container">
         <div className="section-header">
-          <h1 className="section-title">Interest Rates On Deposits</h1>
-          <p className="section-subtitle">Secure your future with our attractive deposit rates</p>
+          <h1 className="section-title">Deposit Interest Rates</h1>
+          <p className="text-muted">Rates effective from 06.08.2024. Subject to revision without prior notice.</p>
         </div>
 
         <div className="card" style={{ marginBottom: '2rem' }}>

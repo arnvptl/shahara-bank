@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-grid">
-          
+
           <div className="footer-col about-col">
             <div className="footer-logo-area">
               <img src="/images/ShahaR bank1.png" alt="Shahar Bank Logo" width="40" height="40" style={{ filter: 'brightness(0) invert(1)', marginBottom: '1rem' }} />
@@ -86,7 +86,7 @@ const Footer = () => {
         <div className="container">
           <div className="regulatory-content">
             <div className="reg-item">
-              <img src="/images/DICGC_web.png" alt="DICGC Insured" width="40" height="40" style={{ objectFit: 'contain', flexShrink: 0 }} />
+              <img src="/images/DICGC.png" alt="DICGC Insured" width="40" height="40" style={{ objectFit: 'contain', flexShrink: 0 }} />
               <div>
                 <strong>DICGC Insured – ₹5 Lakh Cover</strong>
                 <span>Your deposits are insured up to ₹5,00,000 by Deposit Insurance &amp; Credit Guarantee Corporation</span>
