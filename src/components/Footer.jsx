@@ -13,7 +13,7 @@ const Footer = () => {
               <h3>Ahmednagar Shahar Sahakari Bank Ltd.</h3>
             </div>
             <p style={{ opacity: 0.8, marginBottom: '1.5rem', fontSize: '0.9rem' }}>
-              A leading co-operative bank committed to providing premium financial services and fostering economic growth since 1971.
+              Recipient of the <strong>Vasantdada Patil Best Bank Award 2009–10</strong> and <strong>Banking Frontiers Best Core Banking Award 2008–09</strong>. Serving Ahmednagar and Pune since 1971.
             </p>
             <div className="contact-list">
               <div className="contact-item">
@@ -86,14 +86,21 @@ const Footer = () => {
         <div className="container">
           <div className="regulatory-content">
             <div className="reg-item">
-              <ShieldCheck size={24} color="var(--color-accent)" />
+              <img src="/images/DICGC_web.png" alt="DICGC Insured" width="40" height="40" style={{ objectFit: 'contain', flexShrink: 0 }} />
               <div>
-                <strong>Registered with DICGC</strong>
-                <span>Your deposits are insured up to ₹5 Lakhs</span>
+                <strong>DICGC Insured – ₹5 Lakh Cover</strong>
+                <span>Your deposits are insured up to ₹5,00,000 by Deposit Insurance &amp; Credit Guarantee Corporation</span>
               </div>
             </div>
             <div className="reg-item">
               <Landmark size={24} color="var(--color-accent)" />
+              <div>
+                <strong>RBI Regulated &amp; Licensed</strong>
+                <span>Regulated by Reserve Bank of India | Registered under Maharashtra Co-operative Societies Act, 1960</span>
+              </div>
+            </div>
+            <div className="reg-item">
+              <ShieldCheck size={24} color="var(--color-accent)" />
               <div>
                 <strong>RBI Ombudsman</strong>
                 <a href="https://cms.rbi.org.in/" target="_blank" rel="noreferrer">File a Complaint</a>

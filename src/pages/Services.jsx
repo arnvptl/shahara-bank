@@ -27,8 +27,9 @@ const Services = () => {
   return (
     <div className="section">
       <Helmet>
-        <title>Our Services | Ahmednagar Shahar Sahakari Bank</title>
-        <meta name="description" content="Explore our comprehensive banking services: UPI, E-Payments, 24x7 ATMs, NEFT, RTGS, Any Branch Banking, and IFSC Codes." />
+        <title>Banking Services | Ahmednagar Shahar Sahakari Bank – ATM, NEFT, UPI</title>
+        <meta name="description" content="Explore Shahar Bank's services: NPCI-connected ATMs (2,37,600+ network), UPI & e-payments, NEFT/RTGS, missed call balance (7218214848), Any Branch Banking, IFSC codes for all 18 branches." />
+        <link rel="canonical" href="https://new.shaharbank.com/services" />
       </Helmet>
 
       <div className="container">

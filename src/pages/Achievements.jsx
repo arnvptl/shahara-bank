@@ -58,8 +58,9 @@ const Achievements = () => {
   return (
     <>
       <Helmet>
-        <title>Achievements - Ahmednagar Shahar Sahakari Bank</title>
-        <meta name="description" content="Achievements and Awards won by Ahmednagar Shahar Sahakari Bank." />
+        <title>Awards & Achievements | Ahmednagar Shahar Sahakari Bank</title>
+        <meta name="description" content="Ahmednagar Shahar Sahakari Bank has won multiple prestigious awards including Vasantdada Patil Best Bank Award 2009-10, Banking Frontiers Best Core Banking 2008-09, and Best Chairman Award 2012." />
+        <link rel="canonical" href="https://new.shaharbank.com/achievements" />
       </Helmet>
       
       <div className="page-container">

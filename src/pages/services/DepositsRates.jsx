@@ -1,3 +1,4 @@
+
 import { Helmet } from 'react-helmet-async';
 import { PiggyBank, Percent, Calendar } from 'lucide-react';
 
@@ -37,7 +38,7 @@ const DepositsRates = () => {
               Rates Effective From Date: 06-08-2024
             </div>
           </div>
-          
+
           <div className="table-responsive">
             <table className="data-table">
               <thead>

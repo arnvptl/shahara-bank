@@ -69,7 +69,9 @@ const Home = () => {
   return (
     <div className="home-page">
       <Helmet>
-        <title>Ahmednagar Shahar Sahakari Bank Ltd. | Personal, Corporate & Digital Banking</title>
+        <title>Shahar Bank | Cooperative Banking in Ahmednagar Since 1971</title>
+        <meta name="description" content="Ahmednagar Shahar Sahakari Bank Ltd. – RBI-regulated cooperative bank since 1971. DICGC insured deposits up to ₹5 lakh. Home loans, vehicle loans, fixed deposits, NEFT/RTGS. Winner of Vasantdada Patil Best Bank Award 2009-10." />
+        <link rel="canonical" href="https://new.shaharbank.com/" />
       </Helmet>
 
       {/* SECTION 1: Hero & Quick Actions */}
@@ -147,7 +149,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* SECTION 3: Interest Rates Highlight Strip */}
+      {/* SECTION 3: Trust Identity Strip */}
       <section className="rates-highlight-strip">
         <div className="container">
           <div className="rates-content">
@@ -162,6 +164,44 @@ const Home = () => {
             </div>
             <div className="rates-action">
               <Link to="/services/deposit-rates" className="btn btn-primary">View All Rates</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: Real Bank Identity Trust Badges */}
+      <section className="section bg-white" style={{ paddingTop: '2rem', paddingBottom: '2rem', borderTop: '1px solid var(--color-border)' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', textAlign: 'center' }}>
+            <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-md)', background: 'var(--color-bg-alt)' }}>
+              <ShieldCheck size={28} style={{ color: 'var(--color-accent)', marginBottom: '0.5rem' }} />
+              <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-primary-dark)', marginBottom: '0.25rem' }}>DICGC Insured</p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Deposits protected up to ₹5,00,000</p>
+            </div>
+            <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-md)', background: 'var(--color-bg-alt)' }}>
+              <Landmark size={28} style={{ color: 'var(--color-accent)', marginBottom: '0.5rem' }} />
+              <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-primary-dark)', marginBottom: '0.25rem' }}>RBI Regulated</p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Licensed cooperative bank since 1971</p>
+            </div>
+            <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-md)', background: 'var(--color-bg-alt)' }}>
+              <Users size={28} style={{ color: 'var(--color-accent)', marginBottom: '0.5rem' }} />
+              <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-primary-dark)', marginBottom: '0.25rem' }}>NPCI Connected</p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>2,37,600+ ATMs across India</p>
+            </div>
+            <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-md)', background: 'var(--color-bg-alt)' }}>
+              <Building2 size={28} style={{ color: 'var(--color-accent)', marginBottom: '0.5rem' }} />
+              <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-primary-dark)', marginBottom: '0.25rem' }}>Vasantdada Patil Award</p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Best Cooperative Bank 2009–10</p>
+            </div>
+            <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-md)', background: 'var(--color-bg-alt)' }}>
+              <CreditCard size={28} style={{ color: 'var(--color-accent)', marginBottom: '0.5rem' }} />
+              <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-primary-dark)', marginBottom: '0.25rem' }}>Best Core Banking</p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Banking Frontiers Award 2008–09</p>
+            </div>
+            <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-md)', background: 'var(--color-bg-alt)' }}>
+              <PiggyBank size={28} style={{ color: 'var(--color-accent)', marginBottom: '0.5rem' }} />
+              <p style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-primary-dark)', marginBottom: '0.25rem' }}>Maharashtra Co-op Act</p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Registered under MCS Act, 1960</p>
             </div>
           </div>
         </div>

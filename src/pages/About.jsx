@@ -4,8 +4,9 @@ const About = () => {
   return (
     <div className="section">
       <Helmet>
-        <title>About | Ahmednagar Shahar Sahakari Bank Ltd.</title>
-        <meta name="description" content="Learn more about About at Ahmednagar Shahar Sahakari Bank Ltd." />
+        <title>About Us | Ahmednagar Shahar Sahakari Bank Ltd. – History Since 1971</title>
+        <meta name="description" content="Learn about Ahmednagar Shahar Sahakari Bank, founded in 1971 by Prof. Mukund Ghaisas and civic leaders. RBI-regulated cooperative bank with 18+ branches across Ahmednagar, Pune, and Nashik." />
+        <link rel="canonical" href="https://new.shaharbank.com/about" />
       </Helmet>
       <div className="container" style={{ maxWidth: '800px' }}>
         <div className="section-header">

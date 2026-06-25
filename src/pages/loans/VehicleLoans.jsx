@@ -5,8 +5,9 @@ const VehicleLoans = () => {
   return (
     <div className="section">
       <Helmet>
-        <title>Vehicle Loans | Ahmednagar Shahar Sahakari Bank</title>
-        <meta name="description" content="Apply for a Vehicle Loan at Ahmednagar Shahar Sahakari Bank. We offer loans for Two-Wheelers, Four-Wheelers, and Commercial Vehicles with competitive interest rates." />
+        <title>Vehicle Loans | Ahmednagar Shahar Sahakari Bank – From 9.00% p.a.</title>
+        <meta name="description" content="Apply for a Vehicle Loan at Shahar Bank, Ahmednagar. Personal-use vehicles at 9.00% p.a. and commercial/heavy vehicles at 9.50% p.a. Two-wheelers, four-wheelers, and trucks covered." />
+        <link rel="canonical" href="https://new.shaharbank.com/loans/vehicle" />
       </Helmet>
 
       <div className="container">
