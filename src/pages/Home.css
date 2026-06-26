@@ -1,6 +1,3 @@
-/* Home Page Specific Styles */
-
-/* ── MARQUEE TICKER ─────────────────────────── */
 .marquee-strip {
   background-color: var(--color-primary-dark);
   border-bottom: 2px solid var(--color-accent);
@@ -47,7 +44,7 @@
 }
 
 .marquee-item {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.82rem;
   padding: 0 2.5rem;
   display: inline-flex;
@@ -60,7 +57,7 @@
   font-size: 0.6rem;
 }
 
-/* ── QUICK LINKS BAR ─────────────────────────── */
+/* ── QUICK LINKS BAR ── */
 .quick-links-bar-section {
   background-color: #fff;
   border-bottom: 1px solid var(--color-border);
@@ -121,7 +118,7 @@
   }
 }
 
-/* ── INTEREST RATES TABLE ─────────────────────── */
+/* ── INTEREST RATES TABLE ── */
 .rates-table-section {
   padding-bottom: var(--spacing-3xl);
 }
@@ -140,10 +137,10 @@
 }
 
 .rates-sub-head {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--color-primary);
-  border-left: 4px solid var(--color-accent);
+  border-left: 3px solid var(--color-accent);
   padding-left: 0.6rem;
   margin-bottom: 0.85rem;
   text-transform: uppercase;
@@ -167,13 +164,15 @@
   text-align: left;
   font-weight: 600;
   font-size: 0.82rem;
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.12);
+  font-family: 'Inter', sans-serif;
 }
 
 .bank-table td {
   padding: 0.5rem 0.75rem;
   border: 1px solid var(--color-border);
   color: var(--color-text);
+  font-family: 'Inter', sans-serif;
 }
 
 .bank-table tbody tr:nth-child(even) {
@@ -181,7 +180,7 @@
 }
 
 .bank-table .highlight-row td {
-  background-color: #EFF6FF;
+  background-color: #EEF3F9;
   font-weight: 600;
 }
 
@@ -193,12 +192,11 @@
   display: inline-flex;
 }
 
-
 .home-page {
   width: 100%;
 }
 
-/* SECTION 1: Hero & Quick Actions */
+/* ── HERO ── */
 .hero-section {
   position: relative;
   padding-top: var(--spacing-lg);
@@ -226,18 +224,18 @@
 
 .quick-actions-floating {
   position: relative;
-  margin-top: -3rem; /* Pull up to overlap the carousel */
+  margin-top: -3rem;
   z-index: 20;
 }
 
 .quick-actions-card {
   background: var(--color-bg-card);
   border-radius: var(--radius-xl);
-  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.13);
   display: flex;
   justify-content: space-between;
   padding: var(--spacing-sm);
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.045);
   flex-wrap: wrap;
 }
 
@@ -265,11 +263,11 @@
 
 .qa-icon {
   color: var(--color-accent);
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
 }
 
 .qa-item:hover .qa-icon {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 @media (max-width: 768px) {
@@ -283,7 +281,7 @@
   }
 }
 
-/* SECTION 2: Explore Our Products */
+/* ── PRODUCTS ── */
 .explore-products-section {
   padding-top: var(--spacing-3xl);
   padding-bottom: var(--spacing-3xl);
@@ -317,9 +315,9 @@
 }
 
 .product-category-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
-  border-color: var(--color-primary-light);
+  border-color: rgba(27, 58, 92, 0.2);
 }
 
 .product-category-card .icon-wrapper {
@@ -337,7 +335,7 @@
 }
 
 .product-category-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -354,14 +352,14 @@
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .product-category-card:hover .explore-link {
   color: var(--color-accent);
 }
 
-/* SECTION 3: Interest Rates Highlight Strip */
+/* ── RATES STRIP ── */
 .rates-highlight-strip {
   background: var(--gradient-primary);
   color: var(--color-text-inverse);
@@ -383,27 +381,27 @@
 
 .rates-text h3 {
   color: var(--color-text-inverse);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   margin-bottom: 0.5rem;
 }
 
 .rates-text p {
-  opacity: 0.85;
+  opacity: 0.82;
 }
 
 .rates-badge {
   display: flex;
   align-items: baseline;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.09);
   padding: 1rem 1.5rem;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.18);
 }
 
 .rates-badge .up-to {
   font-size: 1rem;
   margin-right: 0.5rem;
-  opacity: 0.8;
+  opacity: 0.78;
 }
 
 .rates-badge .rate-number {
@@ -425,7 +423,7 @@
   }
 }
 
-/* SECTION 4: Tools & Calculators */
+/* ── CALCULATOR ── */
 .calculator-section {
   padding-bottom: var(--spacing-3xl);
 }
@@ -437,7 +435,7 @@
   overflow: hidden;
 }
 
-/* SECTION 5: Complaints Hub */
+/* ── COMPLAINTS ── */
 .complaints-section {
   padding-bottom: var(--spacing-3xl);
 }
@@ -468,12 +466,12 @@
   padding: 0.25rem 1rem;
   border-bottom-left-radius: var(--radius-md);
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
 }
 
 .complaint-card h3 {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   padding-right: 4rem;
 }
 
@@ -483,7 +481,7 @@
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   color: var(--color-text-muted);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .complaint-icon {
@@ -508,7 +506,7 @@
 }
 
 .support-content h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin-bottom: 0.75rem;
 }
 
@@ -521,7 +519,7 @@
   margin-bottom: 0.25rem;
 }
 
-/* SECTION 6: Notice Board & Updates */
+/* ── NOTICE BOARD ── */
 .notice-board-section {
   padding-bottom: var(--spacing-3xl);
 }
@@ -556,11 +554,11 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .view-all {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--color-primary);
 }
@@ -571,7 +569,7 @@
 
 .notice-list > li {
   padding: var(--spacing-lg);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.045);
 }
 
 .notice-list > li:last-child {
@@ -580,16 +578,17 @@
 
 .notice-date {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: var(--color-accent);
   margin-bottom: 0.25rem;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .notice-list p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
 }
 
 .light-text a {
@@ -602,13 +601,13 @@
 }
 
 .light-text strong {
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   margin-bottom: 0.25rem;
   display: block;
-  transition: color 0.2s;
+  transition: color 0.18s;
 }
 
 .light-text p {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.68);
   font-size: 0.85rem;
 }

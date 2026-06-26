@@ -8,20 +8,20 @@
   flex: 1;
 }
 
-/* Site Header — wraps both rows */
+/* ── HEADER ─── */
 .site-header {
   position: relative;
   z-index: 100;
   box-shadow: var(--shadow-md);
+  border-top: 3px solid var(--color-accent);
 }
 
-/* Row 1: Utility Bar */
 .utility-bar {
   background-color: var(--color-primary-dark);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
   padding: 0.3rem 0;
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.82);
 }
 
 .utility-bar-inner {
@@ -39,15 +39,15 @@
 
 .font-label {
   margin-right: 0.25rem;
-  opacity: 0.7;
-  font-size: 0.75rem;
+  opacity: 0.65;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .font-btn {
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.18);
   color: #fff;
   border-radius: 3px;
   padding: 0.1rem 0.45rem;
@@ -61,14 +61,14 @@
 
 .font-btn:hover,
 .font-btn-default {
-  background: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.22);
 }
 
 .utility-right {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  opacity: 0.9;
+  opacity: 0.88;
 }
 
 .utility-right strong {
@@ -81,7 +81,6 @@
   }
 }
 
-/* Row 2: Main Header Nav */
 .header {
   background-color: var(--color-primary);
   color: var(--color-text-inverse);
@@ -104,7 +103,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-text-inverse);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .logo-text span {
@@ -122,15 +121,15 @@
   font-weight: 500;
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.18s ease, color 0.18s ease;
 }
 
 .nav-link:hover {
-  background-color: var(--color-primary-light);
+  background-color: rgba(255,255,255,0.1);
   color: var(--color-accent);
 }
 
-/* Footer Styles */
+/* ── FOOTER ─── */
 .footer {
   background-color: var(--color-primary-dark);
   color: var(--color-text-inverse);
@@ -166,7 +165,9 @@
 .footer-col h3 {
   color: var(--color-accent);
   margin-bottom: var(--spacing-md);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .footer-col ul {
@@ -174,14 +175,14 @@
 }
 
 .footer-col li {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: 0.45rem;
   font-size: 0.9rem;
 }
 
 .footer-col a {
   color: var(--color-text-inverse);
-  opacity: 0.7;
-  transition: opacity 0.2s ease, color 0.2s ease;
+  opacity: 0.68;
+  transition: opacity 0.18s ease, color 0.18s ease;
 }
 
 .footer-col a:hover {
@@ -192,21 +193,21 @@
 .contact-list {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.7rem;
 }
 
 .contact-item {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.7rem;
   align-items: flex-start;
   font-size: 0.9rem;
-  opacity: 0.9;
+  opacity: 0.88;
 }
 
 .footer-regulatory {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.18);
   padding: var(--spacing-lg) 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .regulatory-content {
@@ -231,14 +232,14 @@
 
 .reg-item strong {
   display: block;
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
+  font-size: 0.92rem;
+  margin-bottom: 0.2rem;
 }
 
 .reg-item span, .reg-item a {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--color-text-inverse);
-  opacity: 0.7;
+  opacity: 0.65;
 }
 
 .reg-item a:hover {
@@ -247,9 +248,9 @@
 }
 
 .footer-bottom {
-  background-color: #031326;
+  background-color: #08182e;
   padding: var(--spacing-md) 0;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   opacity: 0.8;
 }
 
