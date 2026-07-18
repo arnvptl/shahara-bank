@@ -39,8 +39,13 @@
 }
 
 @keyframes marqueeScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .marquee-item {
@@ -112,6 +117,7 @@
   .quick-links-bar {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .ql-item {
     font-size: 0.75rem;
     padding: 0.7rem 0.25rem;
@@ -164,7 +170,7 @@
   text-align: left;
   font-weight: 600;
   font-size: 0.82rem;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   font-family: 'Inter', sans-serif;
 }
 
@@ -235,7 +241,7 @@
   display: flex;
   justify-content: space-between;
   padding: var(--spacing-sm);
-  border: 1px solid rgba(0,0,0,0.045);
+  border: 1px solid rgba(0, 0, 0, 0.045);
   flex-wrap: wrap;
 }
 
@@ -274,6 +280,7 @@
   .quick-actions-floating {
     margin-top: -1rem;
   }
+
   .qa-item {
     min-width: 33%;
     padding: var(--spacing-md) var(--spacing-xs);
@@ -395,7 +402,7 @@
   background: rgba(255, 255, 255, 0.09);
   padding: 1rem 1.5rem;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255,255,255,0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .rates-badge .up-to {
@@ -426,13 +433,6 @@
 /* ── CALCULATOR ── */
 .calculator-section {
   padding-bottom: var(--spacing-3xl);
-}
-
-.calculator-wrapper {
-  background: var(--color-bg-card);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
 }
 
 /* ── COMPLAINTS ── */
@@ -567,12 +567,12 @@
   list-style: none;
 }
 
-.notice-list > li {
+.notice-list>li {
   padding: var(--spacing-lg);
-  border-bottom: 1px solid rgba(0,0,0,0.045);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.045);
 }
 
-.notice-list > li:last-child {
+.notice-list>li:last-child {
   border-bottom: none;
 }
 
@@ -608,6 +608,6 @@
 }
 
 .light-text p {
-  color: rgba(255,255,255,0.68);
+  color: rgba(255, 255, 255, 0.68);
   font-size: 0.85rem;
 }

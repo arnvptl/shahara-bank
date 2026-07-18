@@ -164,7 +164,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* EMI & DEPOSIT CALCULATOR */}
+      <section className="section bg-light-blue calculator-section">
+        <div className="container">
+          <div className="section-header">
+            <h2>EMI & Deposit Calculator</h2>
+            <p className="text-muted">Calculate your loan EMI or estimate returns on your fixed deposit.</p>
+          </div>
+          <LoanCalculator />
+        </div>
+      </section>
       {/* INTEREST RATES TABLE */}
       <section className="section bg-white rates-table-section">
         <div className="container">
@@ -331,18 +340,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* EMI & DEPOSIT CALCULATOR */}
-      <section className="section bg-light-blue calculator-section">
-        <div className="container">
-          <div className="section-header">
-            <h2>EMI & Deposit Calculator</h2>
-            <p className="text-muted">Calculate your loan EMI or estimate returns on your fixed deposit.</p>
-          </div>
-          <div className="calculator-wrapper">
-            <LoanCalculator />
-          </div>
-        </div>
-      </section>
+
 
       {/* GRIEVANCE REDRESSAL */}
       <section className="section bg-white complaints-section">
@@ -411,11 +409,11 @@ const Home = () => {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: '1rem', textAlign: 'center' }}>
             {[
               { Icon: ShieldCheck, title: 'DICGC Insured', sub: 'Deposits protected up to ₹5,00,000' },
-              { Icon: Landmark,    title: 'RBI Regulated', sub: 'Licensed cooperative bank since 1971' },
-              { Icon: Users,       title: 'NPCI Connected', sub: '2,37,600+ ATMs across India' },
-              { Icon: Building2,   title: 'Vasantdada Patil Award', sub: 'Best Cooperative Bank 2009–10' },
-              { Icon: CreditCard,  title: 'Best Core Banking', sub: 'Banking Frontiers Award 2008–09' },
-              { Icon: PiggyBank,   title: 'Maharashtra Co-op Act', sub: 'Registered under MCS Act, 1960' },
+              { Icon: Landmark, title: 'RBI Regulated', sub: 'Licensed cooperative bank since 1971' },
+              { Icon: Users, title: 'NPCI Connected', sub: '2,37,600+ ATMs across India' },
+              { Icon: Building2, title: 'Vasantdada Patil Award', sub: 'Best Cooperative Bank 2009–10' },
+              { Icon: CreditCard, title: 'Best Core Banking', sub: 'Banking Frontiers Award 2008–09' },
+              { Icon: PiggyBank, title: 'Maharashtra Co-op Act', sub: 'Registered under MCS Act, 1960' },
             ].map(({ Icon, title, sub }, i) => (
               <div key={i} style={{ padding: '1.1rem', borderRadius: 'var(--radius-md)', background: 'var(--color-bg-card)', border: '1px solid var(--color-border)' }}>
                 <Icon size={26} style={{ color: 'var(--color-accent)', marginBottom: '0.4rem' }} />

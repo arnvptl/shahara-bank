@@ -23,20 +23,21 @@ const branchData = [
   {
     city: 'Pune',
     branches: [
-      { id: 14, name: 'Pimpri Branch', phone: '020 - 27432744', address: "'Satsang', Survey No. 103(P) to 108 (P), Near Ajmera Uddyam Nagar, Nehru Nagar Road, Pimpri, Pune - 18" },
-      { id: 15, name: 'Narayan peth, Pune', phone: '020 - 24443232', address: "'Narayani', Savitri Sadan, Opp.Narayan Peth Police Chowki, Narayan Peth, Pune." }
+      { id: 14, name: 'Kothrud Branch', phone: '020 - 25385100', address: "Kothrud, Pune." },
+      { id: 15, name: 'Pimpri Branch', phone: '020 - 27432744', address: "'Satsang', Survey No. 103(P) to 108 (P), Near Ajmera Uddyam Nagar, Nehru Nagar Road, Pimpri, Pune - 18" },
+      { id: 16, name: 'Narayan peth, Pune', phone: '020 - 24443232', address: "'Narayani', Savitri Sadan, Opp.Narayan Peth Police Chowki, Narayan Peth, Pune." }
     ]
   },
   {
     city: 'Aurangabad',
     branches: [
-      { id: 16, name: 'Garkheda Branch', phone: '0240 - 2344636', address: "Plot No. 8,Shivneri Nagar, Opp. Jawahar Nagar Police Station, Garkheda Parisar, Aurangabad." }
+      { id: 17, name: 'Garkheda Branch', phone: '0240 - 2344636', address: "Plot No. 8,Shivneri Nagar, Opp. Jawahar Nagar Police Station, Garkheda Parisar, Aurangabad." }
     ]
   },
   {
     city: 'Nashik',
     branches: [
-      { id: 17, name: 'Indira Nagar Branch', phone: '0253 - 2392900', address: "'Mukund', Shreeji Kunj Appartment, Gala No.2,3 & 4 Opp. Nashik Cambridge School, Wadala- Pathardi Road, Indira Nagar, Nashik - 9" }
+      { id: 18, name: 'Indira Nagar Branch', phone: '0253 - 2392900', address: "'Mukund', Shreeji Kunj Appartment, Gala No.2,3 & 4 Opp. Nashik Cambridge School, Wadala- Pathardi Road, Indira Nagar, Nashik - 9" }
     ]
   }
 ];

@@ -1,0 +1,26 @@
+{
+  "name": "Ahmednagar Shahar Sahakari Bank Ltd.",
+  "short_name": "Shahar Bank",
+  "description": "RBI-regulated cooperative bank serving Ahmednagar, Pune, Nashik & Aurangabad since 1971. DICGC insured deposits.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0A3663",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon_io/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon_io/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "business"],
+  "lang": "en-IN"
+}
