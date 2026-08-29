@@ -329,7 +329,7 @@ const Home = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="/Deaf_Web_30112024.pdf" target="_blank" rel="noreferrer">
+                  <a href="/Deaf_12062026_Website100826.pdf" target="_blank" rel="noreferrer">
                     <strong>DEAF Accounts Notice</strong>
                     <p>Unclaimed deposits transferred to RBI per RBI guidelines.</p>
                   </a>

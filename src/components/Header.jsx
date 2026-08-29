@@ -116,7 +116,7 @@ const Header = () => {
                   <li><Link to="/tender" onClick={closeMenu}>Tenders</Link></li>
                   <li><Link to="/auction" onClick={closeMenu}>Auctions</Link></li>
                   <li><Link to="/info/kyc" onClick={closeMenu}>KYC Guidelines</Link></li>
-                  <li><a href="/Deaf_Web_30112024.pdf" target="_blank" rel="noreferrer" onClick={closeMenu}>DEAF Accounts</a></li>
+                  <li><a href="/Deaf_12062026_Website100826.pdf" target="_blank" rel="noreferrer" onClick={closeMenu}>DEAF Accounts</a></li>
                 </ul>
               </li>
 

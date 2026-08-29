@@ -74,7 +74,7 @@ const Footer = () => {
               <li><Link to="/annual-reports">Annual Reports</Link></li>
               <li><Link to="/tender">Tenders</Link></li>
               <li><Link to="/auction">Auctions</Link></li>
-              <li><a href="/Deaf_Web_30112024.pdf" target="_blank" rel="noreferrer">DEAF Accounts</a></li>
+              <li><a href="/Deaf_12062026_Website100826.pdf" target="_blank" rel="noreferrer">DEAF Accounts</a></li>
               <li><Link to="/feedback">Grievance Redressal</Link></li>
             </ul>
           </div>
