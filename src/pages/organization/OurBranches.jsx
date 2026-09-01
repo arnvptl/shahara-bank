@@ -9,6 +9,7 @@ const branchData = [
       { id: 2, name: 'Savedi Branch', phone: '0241 - 2430502, 2430652', address: "'Krutarth', Near Hotel Premdan, Survey.No. 176/1 Savedi Road, Ahilyanagar - 414 003" },
       { id: 3, name: 'Maliwada Branch', phone: '0241 - 2343439, 2417203', address: "'Kruparth', Malivada Ves Chowk, Wadiya Park Road, Ahilyanagar - 414 001" },
       { id: 4, name: 'Zedigate Branch', phone: '0241 - 2341849, 2417204', address: "2177 - A, Bansimaharaj Mithaiwala Building, Aadte Bazar Corner, Tapkir Galli, Ramchandra Khunt. Ahilyanagar - 414 001" },
+      { id: '4A', name: 'Zendigate ATM', phone: '-', address: "Zendigate, Ahilyanagar - 414 001", isATM: true },
       { id: 5, name: 'Marketyard Branch', phone: '0241 - 2452268, 2417505', address: "'Shubharth', Korpe Building, Mahatma Phule Chowk, Ahilyanagar - 414 001" },
       { id: 6, name: 'Gulmohar Road Branch', phone: '0241 - 2424061, 2417206', address: "Gulmohar Road, Opp. Parijat Corner, Ahilyanagar - 414 003" },
       { id: 7, name: 'M.I.D.C. Branch', phone: '0241 - 2778280, 2417207', address: "'Aarthkam', The Place Shop No. 1 To 7, Nagar-Manmad Road, Nagapur Ahilyanagar ." },
@@ -88,15 +89,22 @@ const OurBranches = () => {
             <div className="grid">
               {cityGroup.branches.map((branch) => (
                 <div key={branch.id} className="card" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  <h3 style={{ fontSize: '1.125rem', fontWeight: 'bold', color: 'var(--color-primary)' }}>{branch.name}</h3>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                    <h3 style={{ fontSize: '1.125rem', fontWeight: 'bold', color: 'var(--color-primary)', margin: 0 }}>{branch.name}</h3>
+                    {branch.isATM && (
+                      <span style={{ backgroundColor: 'var(--color-accent)', color: '#fff', fontSize: '0.75rem', fontWeight: '700', padding: '0.15rem 0.6rem', borderRadius: '1rem', letterSpacing: '0.05em' }}>ATM</span>
+                    )}
+                  </div>
                   <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
                     <MapPin size={20} color="var(--color-accent)" style={{ flexShrink: 0, marginTop: '0.25rem' }} />
                     <p style={{ color: 'var(--color-text)', lineHeight: '1.5' }}>{branch.address}</p>
                   </div>
+                  {branch.phone && branch.phone !== '-' && (
                   <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                     <Phone size={20} color="var(--color-accent)" style={{ flexShrink: 0 }} />
                     <p style={{ color: 'var(--color-text)' }}>{branch.phone}</p>
                   </div>
+                  )}
                 </div>
               ))}
             </div>

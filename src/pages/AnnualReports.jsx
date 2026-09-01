@@ -4,6 +4,7 @@ import './PageLayout.css';
 
 const AnnualReports = () => {
   const reports = [
+    { name: "55th Annual Report", year: "2025 - 2026", link: "/55Shahar2526.pdf" },
     { name: "54th Annual Report", year: "2024 - 2025", link: "/54Shahar2425.pdf" },
     { name: "53rd Annual Report", year: "2023 - 2024", link: "/53Rpt-2023-24.pdf.pdf" },
     { name: "52nd Annual Report", year: "2022 - 2023", link: "/52Rpt-2022-23.pdf" },

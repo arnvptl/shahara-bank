@@ -69,6 +69,7 @@ const Header = () => {
                   <li><Link to="/about" onClick={closeMenu}>History & Vision</Link></li>
                   <li><Link to="/organization/founder-directors" onClick={closeMenu}>Founder Directors</Link></li>
                   <li><Link to="/organization/board-of-directors" onClick={closeMenu}>Board Of Directors</Link></li>
+                  <li><Link to="/organization/board-of-management" onClick={closeMenu}>Board Of Management</Link></li>
                   <li><Link to="/organization/structure" onClick={closeMenu}>Organization Structure</Link></li>
                   <li><Link to="/organization/branches" onClick={closeMenu}>Our Branches</Link></li>
                   <li><Link to="/organization/ghaisas-sir" onClick={closeMenu}>Prof. Mukund Ghaisas</Link></li>

@@ -9,6 +9,7 @@ import About from './pages/About';
 import VehicleLoans from './pages/loans/VehicleLoans';
 import HomeLoans from './pages/loans/HomeLoans';
 import BoardOfDirectors from './pages/organization/BoardOfDirectors';
+import BoardOfManagement from './pages/organization/BoardOfManagement';
 import OrgStructure from './pages/organization/OrgStructure';
 import FounderDirectors from './pages/organization/FounderDirectors';
 import GhaisasSir from './pages/organization/GhaisasSir';
@@ -45,6 +46,7 @@ function App() {
             <Route path="/organization/founder-directors" element={<FounderDirectors />} />
             <Route path="/organization/ghaisas-sir" element={<GhaisasSir />} />
             <Route path="/organization/board-of-directors" element={<BoardOfDirectors />} />
+            <Route path="/organization/board-of-management" element={<BoardOfManagement />} />
             <Route path="/organization/structure" element={<OrgStructure />} />
             <Route path="/organization/branches" element={<OurBranches />} />
             <Route path="/services" element={<Services />} />

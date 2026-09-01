@@ -7,7 +7,7 @@ const directors = [
     name: "CA Girish Mukund Ghaisas",
     position: "Chairman",
     education: "Chartered Accountant",
-    contact: { office: "2325532", res: "2423831", mobile: "9422225392" },
+    contact: { mobile: "9422225392", email: "girishghaisas@gmail.com" },
     image: "/images/ph10.jpg"
   },
   {

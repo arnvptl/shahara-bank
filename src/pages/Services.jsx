@@ -20,7 +20,6 @@ const Services = () => {
     { branch: 'Pimpri', code: 'SVCB0008013' },
     { branch: 'Narayan Peth', code: 'SVCB0008017' },
     { branch: 'Garkheda', code: 'SVCB0008018' },
-    { branch: 'Waluj - Aurangabad', code: 'SVCB0008022' },
     { branch: 'Nashik', code: 'SVCB0008021' }
   ];
 

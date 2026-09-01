@@ -39,6 +39,13 @@ const BankPosition = () => {
       Networth: 929.23,
       Advances: 21011.93,
       Deposits: 44385.35
+    },
+    {
+      year: '2025-26',
+      Capital: 1998.74,
+      Networth: 1886.60,
+      Advances: 28097.92,
+      Deposits: 45031.29
     }
   ];
 

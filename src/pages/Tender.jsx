@@ -18,6 +18,13 @@ const Tender = () => {
         </div>
         
         <div className="page-content">
+          <p style={{ fontSize: '1.1rem', color: 'var(--color-text-muted)', textAlign: 'center', padding: '3rem 0' }}>
+            There are no active tenders at this time. Please check back later.
+          </p>
+
+          {/* Tender notices are preserved below for future use - uncomment to re-activate */}
+
+          {/*
           <div className="notice-card" style={{ marginBottom: '30px' }}>
             <h2 className="section-title">Tender Notice: 01/2023-24</h2>
             <p style={{ fontSize: '1.1rem', marginBottom: '15px' }}>
@@ -55,6 +62,7 @@ const Tender = () => {
               </div>
             </div>
           </div>
+          */}
         </div>
       </div>
     </>
