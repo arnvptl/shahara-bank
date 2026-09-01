@@ -17,7 +17,7 @@ const VehicleLoans = () => {
           <p className="text-muted">Financing for two-wheelers, four-wheelers (personal use), and commercial vehicles including heavy vehicles and tankers.</p>
         </div>
 
-        <div className="card" style={{ marginBottom: 'var(--spacing-2xl)' }}>
+        <div className="card card-static" style={{ marginBottom: 'var(--spacing-2xl)' }}>
           <h3 style={{ color: 'var(--color-primary)', marginBottom: 'var(--spacing-md)' }}>List of Documents Required</h3>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-lg)' }}>
             <div>
@@ -86,7 +86,7 @@ const VehicleLoans = () => {
 
 
         {/* Eligibility Criteria */}
-        <div className="card" style={{ marginBottom: 'var(--spacing-2xl)' }}>
+        <div className="card card-static" style={{ marginBottom: 'var(--spacing-2xl)' }}>
           <h3 style={{ color: 'var(--color-primary)', marginBottom: 'var(--spacing-md)' }}>Eligibility Criteria</h3>
           <ul style={{ paddingLeft: '1.5rem', color: 'var(--color-text-muted)', lineHeight: '1.9' }}>
             <li>Salaried employees, self-employed individuals, traders, and transporters</li>

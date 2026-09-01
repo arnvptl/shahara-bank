@@ -16,7 +16,7 @@ const ProjectFinanceLoans = () => {
         </div>
 
         <div className="grid">
-          <div className="card">
+          <div className="card card-static">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
               <FileCheck size={24} />
               <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>List of Documents Required</h2>
@@ -33,7 +33,7 @@ const ProjectFinanceLoans = () => {
             </ul>
           </div>
 
-          <div className="card">
+          <div className="card card-static">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
               <Percent size={24} />
               <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>Interest Rates</h2>

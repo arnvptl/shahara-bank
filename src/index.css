@@ -162,6 +162,12 @@ button {
   box-shadow: var(--shadow-xl);
 }
 
+/* Use .card-static on info/content cards where hover lift isn't appropriate */
+.card-static:hover {
+  transform: none;
+  box-shadow: var(--shadow-md);
+}
+
 .section {
   padding: var(--spacing-3xl) 0;
 }

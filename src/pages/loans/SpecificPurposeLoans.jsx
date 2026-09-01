@@ -15,7 +15,7 @@ const SpecificPurposeLoans = () => {
           <p className="section-subtitle">Financial assistance for specific life events and needs</p>
         </div>
 
-        <div className="card" style={{ marginBottom: '2rem' }}>
+        <div className="card card-static" style={{ marginBottom: '2rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
             <Target size={24} />
             <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>Supported Purposes</h2>
@@ -60,7 +60,7 @@ const SpecificPurposeLoans = () => {
           </div>
         </div>
 
-        <div className="card" style={{ marginBottom: '2rem' }}>
+        <div className="card card-static" style={{ marginBottom: '2rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
             <Percent size={24} />
             <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>Interest Rates</h2>
@@ -93,7 +93,7 @@ const SpecificPurposeLoans = () => {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card card-static">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>
             <FileCheck size={24} />
             <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>List of Documents Required</h2>

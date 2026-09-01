@@ -130,7 +130,7 @@ const ProfessionalLoans = () => {
         </div>
 
         {/* Interest Rate Highlights */}
-        <div className="card" style={{ marginBottom: 'var(--spacing-xl)', padding: 0, overflow: 'hidden' }}>
+        <div className="card card-static" style={{ marginBottom: 'var(--spacing-xl)', padding: 0, overflow: 'hidden' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
             <div style={{ padding: 'var(--spacing-lg)', textAlign: 'center', backgroundColor: 'var(--color-bg)', borderRight: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
               <p style={{ fontSize: '0.875rem', fontWeight: '600', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem' }}>Base Interest Rate</p>
@@ -180,7 +180,7 @@ const ProfessionalLoans = () => {
           </div>
 
           {/* Active Content Area */}
-          <div className="card">
+          <div className="card card-static">
             {activeProfession && (
               <div>
                 <h2 style={{ fontSize: '1.5rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '0.75rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', color: 'var(--color-primary-dark)' }}>

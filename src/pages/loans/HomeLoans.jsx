@@ -16,7 +16,7 @@ const HomeLoans = () => {
           <p className="text-muted">Finance the purchase or construction of residential property. Available to salaried and self-employed individuals.</p>
         </div>
 
-        <div className="card" style={{ marginBottom: 'var(--spacing-2xl)' }}>
+        <div className="card card-static" style={{ marginBottom: 'var(--spacing-2xl)' }}>
           <h3 style={{ color: 'var(--color-primary)', marginBottom: 'var(--spacing-md)' }}>List of Documents Required</h3>
           <ol style={{ paddingLeft: '1.5rem', color: 'var(--color-text-muted)' }}>
             <li>Original Title documents of the property</li>
@@ -62,7 +62,7 @@ const HomeLoans = () => {
         </div>
 
         {/* Eligibility Criteria */}
-        <div className="card" style={{ marginBottom: 'var(--spacing-2xl)' }}>
+        <div className="card card-static" style={{ marginBottom: 'var(--spacing-2xl)' }}>
           <h3 style={{ color: 'var(--color-primary)', marginBottom: 'var(--spacing-md)' }}>Eligibility Criteria</h3>
           <ul style={{ paddingLeft: '1.5rem', color: 'var(--color-text-muted)', lineHeight: '1.9' }}>
             <li>Salaried employees, self-employed individuals, and business persons</li>
