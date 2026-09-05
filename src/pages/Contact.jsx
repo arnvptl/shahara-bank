@@ -27,7 +27,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us | Ahmednagar Shahar Sahakari Bank</title>
         <meta name="description" content="Contact Ahmednagar Shahar Sahakari Bank. Call 0241-2323321 or 0241-2346217. Email ceo@shaharbank.com. Head office at Navipeth, Ahmednagar. Toll-free: 1800 233 1190." />
-        <link rel="canonical" href="https://new.shaharbank.com/contact" />
+        <link rel="canonical" href="https://shaharbank.bank.in/contact" />
       </Helmet>
       <div className="container">
         <div className="section-header">

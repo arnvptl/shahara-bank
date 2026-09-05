@@ -6,7 +6,7 @@ const About = () => {
       <Helmet>
         <title>About Us | Ahmednagar Shahar Sahakari Bank Ltd. – History Since 1971</title>
         <meta name="description" content="Learn about Ahmednagar Shahar Sahakari Bank, founded in 1971 by Prof. Mukund Ghaisas and civic leaders. RBI-regulated cooperative bank with 18+ branches across Ahmednagar, Pune, and Nashik." />
-        <link rel="canonical" href="https://new.shaharbank.com/about" />
+        <link rel="canonical" href="https://shaharbank.bank.in/about" />
       </Helmet>
       <div className="container" style={{ maxWidth: '800px' }}>
         <div className="section-header">

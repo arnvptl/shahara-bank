@@ -7,7 +7,7 @@ const HomeLoans = () => {
       <Helmet>
         <title>Home Loans | Ahmednagar Shahar Sahakari Bank – From 9.50% p.a.</title>
         <meta name="description" content="Apply for a Home Loan at Shahar Bank, Ahmednagar. Loans up to ₹30 lakhs at 9.50% p.a. and above ₹30 lakhs at 10.00% p.a. Competitive rates, flexible tenure, minimal documentation." />
-        <link rel="canonical" href="https://new.shaharbank.com/loans/home" />
+        <link rel="canonical" href="https://shaharbank.bank.in/loans/home" />
       </Helmet>
 
       <div className="container">

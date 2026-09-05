@@ -7,7 +7,7 @@ const NeftRtgs = () => {
       <Helmet>
         <title>NEFT & RTGS Fund Transfer | Ahmednagar Shahar Sahakari Bank</title>
         <meta name="description" content="NEFT and RTGS fund transfer services at Ahmednagar Shahar Sahakari Bank. Transfer funds to any bank across India. RTGS for amounts above ₹1 lakh, NEFT for any amount." />
-        <link rel="canonical" href="https://new.shaharbank.com/services/neft-rtgs" />
+        <link rel="canonical" href="https://shaharbank.bank.in/services/neft-rtgs" />
       </Helmet>
 
       <div className="container">

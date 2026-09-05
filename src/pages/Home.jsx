@@ -74,7 +74,7 @@ const Home = () => {
       <Helmet>
         <title>Shahar Bank | Cooperative Banking in Ahmednagar Since 1971</title>
         <meta name="description" content="Ahmednagar Shahar Sahakari Bank Ltd. – RBI-regulated cooperative bank since 1971. DICGC insured deposits up to ₹5 lakh. Home loans, vehicle loans, fixed deposits, NEFT/RTGS. Winner of Vasantdada Patil Best Bank Award 2009-10." />
-        <link rel="canonical" href="https://new.shaharbank.com/" />
+        <link rel="canonical" href="https://shaharbank.bank.in/" />
       </Helmet>
 
       {/* MARQUEE TICKER */}

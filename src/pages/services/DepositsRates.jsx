@@ -8,7 +8,7 @@ const DepositsRates = () => {
       <Helmet>
         <title>Deposit Interest Rates | Ahmednagar Shahar Sahakari Bank</title>
         <meta name="description" content="Current savings account and fixed deposit interest rates at Ahmednagar Shahar Sahakari Bank. Rates effective from 01.09.2026. Additional rates for senior and super senior citizens." />
-        <link rel="canonical" href="https://new.shaharbank.com/services/deposit-rates" />
+        <link rel="canonical" href="https://shaharbank.bank.in/services/deposit-rates" />
       </Helmet>
 
       <div className="container">
@@ -36,7 +36,7 @@ const DepositsRates = () => {
               <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>Term Deposits Rates</h2>
             </div>
             <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
-              Rates Effective From Date: 01-09-2026
+              Rates Effective From Date: 04-089-2026
             </div>
           </div>
 

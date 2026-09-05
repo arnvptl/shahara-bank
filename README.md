@@ -1,6 +1,6 @@
 # Ahmednagar Shahar Sahakari Bank — Website
 
-Modern website for [Ahmednagar Shahar Sahakari Bank Ltd.](https://new.shaharbank.com),
+Modern website for [Ahmednagar Shahar Sahakari Bank Ltd.](https://shaharbank.bank.in),
 a cooperative bank in Ahmednagar and Pune, established 1970.
 
 ## Stack

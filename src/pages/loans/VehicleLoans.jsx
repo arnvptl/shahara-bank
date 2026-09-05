@@ -8,7 +8,7 @@ const VehicleLoans = () => {
       <Helmet>
         <title>Vehicle Loans | Ahmednagar Shahar Sahakari Bank – From 9.00% p.a.</title>
         <meta name="description" content="Apply for a Vehicle Loan at Shahar Bank, Ahmednagar. Personal-use vehicles at 9.00% p.a. and commercial/heavy vehicles at 9.50% p.a. Two-wheelers, four-wheelers, and trucks covered." />
-        <link rel="canonical" href="https://new.shaharbank.com/loans/vehicle" />
+        <link rel="canonical" href="https://shaharbank.bank.in/loans/vehicle" />
       </Helmet>
 
       <div className="container">
