@@ -103,6 +103,27 @@ const Feedback = () => {
             </div>
           </form>
         </div>
+
+        <div className="card" style={{ marginTop: 'var(--spacing-xl)' }}>
+          <h3 style={{ marginBottom: 'var(--spacing-md)' }}>Redressal of Complaint</h3>
+          
+          <div style={{ marginBottom: 'var(--spacing-lg)' }}>
+            <h4 style={{ margin: '0 0 var(--spacing-xs) 0' }}>Mr. Dinesh Kachru Lokhande</h4>
+            <p className="text-muted" style={{ margin: '0 0 var(--spacing-xs) 0' }}>Chief Executive Officer</p>
+            <p style={{ margin: '0 0 var(--spacing-xs) 0' }}><strong>Contact Number:</strong> 0241 - 2323321 / 2346217</p>
+            <p style={{ margin: '0' }}><strong>E-mail:</strong> <a href="mailto:ceo@shaharbank.com">ceo@shaharbank.com</a></p>
+          </div>
+
+          <div style={{ padding: 'var(--spacing-md)', backgroundColor: 'var(--color-bg-alt)', borderRadius: 'var(--radius-md)' }}>
+            <p style={{ margin: '0 0 var(--spacing-sm) 0', fontWeight: '500' }}>If the customer is not satisfied with the bank's response, they may approach the RBI Banking Ombudsman at: <a href="https://cms.rbi.org.in/" target="_blank" rel="noopener noreferrer">https://cms.rbi.org.in/</a></p>
+            <div className="text-muted">
+              <p style={{ margin: '0 0 2px 0' }}>Office of Reserve Bank Ombudsman - 1</p>
+              <p style={{ margin: '0 0 2px 0' }}>C/o Reserve Bank of India</p>
+              <p style={{ margin: '0 0 2px 0' }}>4th Floor, Opp. Mumbai Central Railway Station</p>
+              <p style={{ margin: '0' }}>Byculla, Mumbai 400008</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
